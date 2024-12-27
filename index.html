@@ -3,25 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>比赛加油，你是最棒的！</title>
+    <title>加油助威!</title>
     <style>
         body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ff7eb3, #ff758c);
+            color: #fff;
+            text-align: center;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            margin: 0;
-            background-color: #fef3f3;
-            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+        .container {
+            animation: fadeIn 2s ease-out;
         }
         h1 {
-            color: #ff6b6b;
-            font-size: 3em;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+            font-size: 4rem;
+            margin: 0;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+        }
+        p {
+            font-size: 1.5rem;
+            margin: 20px 0 0;
+        }
+        .cheer {
+            margin-top: 30px;
+            font-size: 3rem;
+            font-weight: bold;
+            color: #ffe600;
+            text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.5);
+            animation: bounce 1s infinite alternate;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        @keyframes bounce {
+            from {
+                transform: translateY(0);
+            }
+            to {
+                transform: translateY(-20px);
+            }
         }
     </style>
 </head>
 <body>
-<h1>比赛加油，你是最棒的！</h1>
+    <div class="container">
+        <h1>加油！你是最棒的！</h1>
+        <p>无论遇到什么困难，保持热情，永不放弃！</p>
+        <div class="cheer">GO! GO! GO! 💪🎉</div>
+    </div>
 </body>
 </html>
